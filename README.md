@@ -1,0 +1,1 @@
+Given an element, ```getScrollParent``` returns the scrolling parent of that element.
