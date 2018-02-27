@@ -10,9 +10,9 @@ function isScrollParent(element) {
 }
 
 export default function getScrollParent(element) {
-  if (isScrollParent(element)) {
-    return element;
-  } else if (element.tagName === DEFAULT_SCROLL_PARENT) {
+  if (!element || element.tagName === DEFAULT_SCROLL_PARENT) {
+    return window;
+  } else if (isScrollParent(element)) {
     return element;
   } else {
     return getScrollParent(element.parentNode);
