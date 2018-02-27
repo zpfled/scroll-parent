@@ -42,7 +42,7 @@ describe('getScrollParent', () => {
   describe('when no parent element has overflow set', () => {
     it('returns the window', () => {
       const { element } = setup({});
-      expect(getScrollParent(element).tagName).toEqual('BODY');
+      expect(getScrollParent(element)).toEqual(window);
     });
   });
 });
