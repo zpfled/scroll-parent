@@ -1,6 +1,6 @@
 {
-  "name": "scroll-parent",
-  "version": "0.2.0",
+  "name": "skrollparent",
+  "version": "0.1.0",
   "description": "given an element, returns the scrolling parent of that element",
   "main": "lib/index.js",
   "files": [
